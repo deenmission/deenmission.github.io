@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>𝗗𝗘𝗘𝗡</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
   <style>
      body {
       font-family: 'Segoe UI', sans-serif;
@@ -30,10 +34,53 @@
     .section {
       padding: 10px;
     }
+    hr {
+      margin: 20px auto;
+      max-width: 500px;
+      border: 0;
+      height: 1px;
+      background: #d1d5db;
+    }
+    /* Contact Section Styles */
+    .contact-section {
+      background-color: #e6fffa;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 12px;
+      color: #065f46;
+      box-shadow: 0 4px 8px rgba(6, 95, 70, 0.1);
+    }
+    .contact-section h2 {
+      margin-bottom: 15px;
+      font-weight: 700;
+      font-size: 1.8em;
+    }
+    .contact-link {
+      text-decoration: none;
+      color: #065f46;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 12px;
+      transition: color 0.3s ease;
+      font-size: 1.2em;
+    }
+    .contact-link i {
+      margin-right: 10px;
+      font-size: 24px;
+      min-width: 30px;
+      text-align: center;
+    }
+    .contact-link:hover {
+      color: #059669;
+    }
     footer {
       background-color: #d1fae5;
       padding: 20px;
       font-size: 0.9em;
+      color: #065f46;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -42,10 +89,31 @@
     <h1>𝗗𝗘𝗘𝗡</h1>
     <p>Our Journey to Light</p>
   </header>
+
   <div class="section">
     <h2>আমাদের উদ্দেশ্য</h2>
     <p>DEEN একটি ইসলামিক সংগঠন, যেটি ইসলামী জ্ঞান ও নৈতিকতা ছড়িয়ে দিতে কাজ করে।</p>
   </div>
+  
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="contact-section">
+    <h2>যোগাযোগ করুন</h2>
+
+    <a href="mailto:deenmission@gmail.com" class="contact-link">
+      <i class="fas fa-envelope"></i> example@gmail.com
+    </a><br>
+
+    <a href="https://facebook.com/deenmission" target="_blank" class="contact-link">
+      <i class="fab fa-facebook"></i> ফেসবুক পেজ
+    </a><br>
+
+    <a href="https://youtube.com/deenmission_org" target="_blank" class="contact-link">
+      <i class="fab fa-youtube"></i> ইউটিউব চ্যানেল
+    </a>
+  </div>
+
   <footer>
     &copy; 2025 DEEN. সর্বস্বত্ব সংরক্ষিত।
   </footer>
