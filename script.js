@@ -1,15 +1,9 @@
 const posts = [
-"Say, He is Allah, the One.
-                        (112:01)"
-"So which of the favors of your Lord will you both deny?
-                                                (55:13)"
-"Indeed, the Hour is coming - no doubt about it - but most of the people do not believe.
-                                                                                (40:59)"
-"On that Day you will be brought together, and no secret of yours will be hidden.
-                                                                          (69:18)"
-"And be steadfast in your Lord.”
-                           (94:08)"
-  
+"Say, He is Allah, the One.",
+"So which of the favors of your Lord will you both deny?",
+"indeed, the Hour is coming - no doubt about it - but most of the people do not believe.",
+"On that Day you will be brought together, and no secret of yours will be hidden.",
+"And be steadfast in your Lord.”,
 ];
 
 let current = 0;
