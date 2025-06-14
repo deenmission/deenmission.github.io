@@ -59,11 +59,11 @@ hr {
   align-items: center;
   margin-bottom: 12px;
   transition: color 0.3s ease;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 .contact-link i {
   margin-right: 10px;
-  font-size: 18px;
+  font-size: 1.5em;
   min-width: 30px;
   text-align: center;
 }
