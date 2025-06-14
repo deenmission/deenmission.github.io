@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <title>𝗗𝗘𝗘𝗡 - আমাদের পথ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #1f2937;
+    }
+    header {
+      background-color: #10b981;
+      padding: 40px 0;
+      color: white;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .section {
+      padding: 30px;
+    }
+    footer {
+      background-color: #d1fae5;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>𝗗𝗘𝗘𝗡</h1>
+    <p>Our Journey to Light</p>
+  </header>
+  <div class="section">
+    <h2>আমাদের উদ্দেশ্য</h2>
+    <p>DEEN একটি ইসলামিক সংগঠন, যেটি ইসলামী জ্ঞান ও নৈতিকতা ছড়িয়ে দিতে কাজ করে।</p>
+  </div>
+  <footer>
+    &copy; 2025 DEEN. সর্বস্বত্ব সংরক্ষিত।
+  </footer>
+</body>
+</html>
