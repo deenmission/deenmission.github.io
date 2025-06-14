@@ -132,3 +132,8 @@ hr {
   transform: scale(0.9) translateY(-20px);
   z-index: 0;
 }
+footer {
+  font-size: 0.5em;
+  text-align: center;
+  color: rgba;
+}
