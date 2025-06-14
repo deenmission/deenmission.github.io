@@ -1,9 +1,15 @@
 const posts = [
-  "Alhamdulillah! 300+ families received food packs this week. 💚",
-  "Join our live Tafsir every Friday at 8 PM. 📖",
-  "Never underestimate a sincere dua. 🤲",
-  "Upcoming Halaqa: Youth & The Qur'an - Sunday 5 PM!",
-  "Your zakat helps orphans. Sponsor now. 💝"
+"Say, He is Allah, the One.
+                        (112:01)"
+"So which of the favors of your Lord will you both deny?
+                                                (55:13)"
+"Indeed, the Hour is coming - no doubt about it - but most of the people do not believe.
+                                                                                (40:59)"
+"On that Day you will be brought together, and no secret of yours will be hidden.
+                                                                          (69:18)"
+"And be steadfast in your Lord.”
+                           (94:08)"
+  
 ];
 
 let current = 0;
