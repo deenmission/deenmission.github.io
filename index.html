@@ -16,6 +16,7 @@
       padding: 0;
       text-align: center;
       color: #1f2937;
+      font-size: 14px; /* পুরো বডির ডিফল্ট ফন্ট সাইজ কমানো */
     }
     header {
       background-color: #10b981;
@@ -23,16 +24,22 @@
       color: white;
     }
     h1 {
-      font-size: 3em;
+      font-size: 2em; /* হেডারের বড় টাইটেল ছোট করা হলো */
       margin: 0;
     } 
     p {
-      font-size: 1.5em;
+      font-size: 1em; /* হেডারের সাবটাইটেল ছোট */
       margin: 0;
       font-weight: bold;
     }
     .section {
       padding: 10px;
+    }
+    h2 {
+      font-size: 1.3em; /* সেকশন হেডিং ছোট */
+    }
+    h3 {
+      font-size: 1.1em; /* join us হেডিং ছোট */
     }
     hr {
       margin: 20px auto;
@@ -43,18 +50,18 @@
     }
     /* Contact Section Styles */
     .contact-section {
-      background-color: #e6fffa;
       padding: 20px;
       margin: 20px auto;
       max-width: 400px;
-      border-radius: 12px;
-      color: #065f46;
-      box-shadow: 0 4px 8px rgba(6, 95, 70, 0.1);
+      color: black; /* Contact লেখা কালো */
+      text-align: left; /* Left align text */
+      font-size: 1em; /* কনট্যাক্ট সেকশনের ফন্ট সাইজ */
     }
     .contact-section h2 {
       margin-bottom: 15px;
       font-weight: 700;
-      font-size: 1.8em;
+      font-size: 1.5em; /* contact heading ছোট */
+      color: black;
     }
     .contact-link {
       text-decoration: none;
@@ -64,23 +71,39 @@
       align-items: center;
       margin-bottom: 12px;
       transition: color 0.3s ease;
-      font-size: 1.2em;
+      font-size: 1em; /* লিংকের ফন্ট সাইজ ছোট */
     }
     .contact-link i {
       margin-right: 10px;
-      font-size: 24px;
+      font-size: 18px; /* আইকনের সাইজ কমানো */
       min-width: 30px;
       text-align: center;
     }
     .contact-link:hover {
       color: #059669;
     }
-    footer {
-      background-color: #d1fae5;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #065f46;
-      margin-top: 40px;
+
+    /* Join Us section */
+    .join-us {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 1em; /* join us এর সাধারণ ফন্ট সাইজ */
+    }
+    .join-us hr {
+      margin-bottom: 15px;
+      max-width: 200px;
+      border: 0;
+      height: 2px;
+      background: #065f46;
+      opacity: 0.5;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .social-links {
+      display: inline-flex;
+      gap: 20px;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -103,16 +126,21 @@
 
     <a href="mailto:deenmission@gmail.com" class="contact-link">
       <i class="fas fa-envelope"></i> Email
-    </a><br>
-     <hr>
-    <h3>Join us</h3>
-    <a href="https://facebook.com/deenmission" target="_blank" class="contact-link">
-      <i class="fab fa-facebook"></i> Facebook
-    </a><br>
-
-    <a href="https://youtube.com/@deenmission_org" target="_blank" class="contact-link">
-      <i class="fab fa-youtube"></i> YouTube
     </a>
+  </div>
+
+  <div class="join-us">
+    <hr> <!-- Join us এর উপরে ব্রেক -->
+    <h3>Join us</h3>
+    <div class="social-links">
+      <a href="https://facebook.com/deenmission" target="_blank" class="contact-link">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+
+      <a href="https://youtube.com/@deenmission_org" target="_blank" class="contact-link">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+    </div>
   </div>
 
   <footer>
