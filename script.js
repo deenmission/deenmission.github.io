@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const exitBtn = document.getElementById("exitBtn");
   const textContent = document.querySelector(".text-content");
   const extraText = document.querySelector(".extra-text");
+  const card = document.querySelector(".card"); // নতুন লাইন
 
   const dhikr = ["Allahu Akbar", "Subhanallah", "Alhamdulillah", "La ilaha illallah", "Astaghfirullah"];
   const ayahs = [
@@ -38,6 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
     extraText.style.display = "inline";
     readMoreBtn.style.display = "none";
     exitBtn.style.display = "inline-block";
+
+    // নতুন লাইন: কার্ড বড় করো
+    card.classList.add("expanded");
   });
 
   exitBtn.addEventListener("click", () => {
@@ -45,5 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
     extraText.style.display = "none";
     readMoreBtn.style.display = "inline-block";
     exitBtn.style.display = "none";
+
+    // নতুন লাইন: কার্ড আবার ছোট করো
+    card.classList.remove("expanded");
   });
 });
