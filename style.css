@@ -1,26 +1,46 @@
-body {
+/* Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Style */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2cc3b5; /* ছবির মত সবুজ */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* Logo Container */
+.logo-container {
+  text-align: center;
+  color: white;
+}
+
+/* Logo Image */
+.logo {
+  height: 60px;
+  margin-bottom: 4px;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 14px;
+  font-weight: bold;
   font-family: sans-serif;
 }
 
-.logo-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white; /* Or transparent if logo has background */
-  padding: 10px 0;
-  text-align: center;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.logo-image {
-  height: 60px;
-  object-fit: contain;
-}
-
-.content {
-  padding-top: 100px;
+/* Main content to make scroll visible */
+main .content {
+  margin-top: 120px;
   padding: 20px;
+  font-family: sans-serif;
 }
