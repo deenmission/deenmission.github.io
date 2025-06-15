@@ -10,7 +10,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #2cc3b5; 
+  background-color: #2fbeb3; 
   padding: 20px;
   display: flex;
   align-items: center;
@@ -23,6 +23,7 @@
 .logo-container {
   text-align: center;
   color: white;
+  
 }
 
 /* Logo Image */
