@@ -17,9 +17,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
+  height: 70px;
+  background-color: #35a392; /* আপনার লোগোর মতো সবুজ রঙ */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,16 +26,20 @@ body {
   z-index: 1000;
 }
 
+/* Logo Style */
 .logo {
-  height: 35px;
+  height: 50px; /* আগে ছিল 35px, এখন বড় দেখাবে */
+  width: auto;
 }
 
+/* Menu Icon */
 .menu-icon {
-  font-size: 24px;
+  font-size: 28px;
+  color: #fff; /* থ্রি ডট সাদা হবে */
   cursor: pointer;
 }
 
-/* Content Below Header */
+/* Content */
 main {
   padding: 100px 20px 20px;
 }
