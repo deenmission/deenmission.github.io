@@ -1,2 +1,2 @@
-// আপনি ভবিষ্যতে JavaScript ফিচার যোগ করতে চাইলে এখানে কোড লিখবেন।
+// Future menu toggle functionality can go here
 console.log("Website loaded!");
