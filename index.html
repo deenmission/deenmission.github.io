@@ -2,52 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DEEN Mission</title>
-
-  <!--links-->
-  
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
-  
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
   <header class="sticky-header">
     <img src="images/deen.png" alt="Logo" class="logo" />
+    <div class="welcome-text" id="dynamicText">Allahu Akbar</div>
     <div class="menu-icon">☰</div>
   </header>
 
   <main>
-    <section>
+    <div class="card" id="mainCard">
+      <h2 id="ayahText" class="ayah-text fade">
+        ALLAH IS ONE. <span class="ayah-extra" style="display: none;">
+        This is a powerful reminder of monotheism and sincerity in worship, foundational to Islamic belief.
+        </span>
+      </h2>
+      <div class="text-content fade">
+        <p>
+          DEEN is an Islamic community organization...<span class="extra-text" style="display: none;">
+          We welcome everyone to learn and grow in faith together, through the peace and guidance found in Islam.
+          </span>
+        </p>
+      </div>
+      <div class="button-row">
+        <button id="readMoreBtn">Read More</button>
+        <button id="exitBtn" style="display: none;">Exit</button>
+      </div>
+    </div>
+
+    <section id="mission">
       <div class="container">
-      <h1>OUR MISSION</h1><hr><br>
-      <p>
-DEEN is an Islamic community organization dedicated to conveying the noble message of Islam in light of the Qur’an and Sunnah. We actively engage in promoting spiritual refinement, religious education, and the development of a morally upright society. DEEN believes that the core teachings of Islam—God-consciousness, compassion, and a sense of responsibility—guide both individuals and communities toward true well-being. Through educational programs, social services, and acts of compassion, we strive to spread the peaceful and purposeful message of Islam to people of all ages and backgrounds.
-      </p>
+        <h1>OUR MISSION</h1><hr><br>
+        <p>DEEN is an Islamic community organization dedicated to conveying the noble message of Islam...</p>
       </div>
     </section>
   </main>
 
-<!--Footer section-->
-  
   <footer>
     <h3>Get in touch</h3>
     <div class="row-inline">
       <a href="mailto:deenmission@gmail.com" class="link-box">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email" />
-        Email
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email" /> Email
       </a>
       <a href="tel:+8801521731371" class="link-box">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone" />
-        Phone
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone" /> Phone
       </a>
       <a href="https://wa.me/8801521731371" class="link-box" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
-        WhatsApp
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" /> WhatsApp
       </a>
     </div>
-
     <h3>Connect with us</h3>
     <div class="row-inline">
       <a href="https://facebook.com" target="_blank" class="link-box">
@@ -55,15 +61,12 @@ DEEN is an Islamic community organization dedicated to conveying the noble messa
         <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png" alt="Facebook" />
       </a>
       <a href="https://youtube.com" target="_blank" class="link-box">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube" />
-        YouTube
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube" /> YouTube
       </a>
     </div>
-
-    <div class="copyright">
-       Deen 
-    </div>
+    <div class="copyright">Deen</div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
