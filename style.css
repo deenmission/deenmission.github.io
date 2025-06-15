@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #f2f2f2;
 }
 
 .logo-header {
@@ -9,36 +8,19 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #2bb89f;
-  color: white;
-  padding: 12px 20px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  z-index: 999;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Or transparent if logo has background */
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.logo-svg {
-  width: 60px;
-  height: auto;
-}
-
-.logo-texts {
-  display: flex;
-  flex-direction: column;
-}
-
-.logo-title {
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.logo-tagline {
-  font-size: 14px;
+.logo-image {
+  height: 60px;
+  object-fit: contain;
 }
 
 .content {
-  margin-top: 100px;
+  padding-top: 100px;
   padding: 20px;
 }
