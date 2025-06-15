@@ -5,9 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const exitBtn = document.getElementById("exitBtn");
   const textContent = document.querySelector(".text-content");
   const extraText = document.querySelector(".extra-text");
-  const ayahExtra = document.querySelector(".ayah-extra");
-  const cardAyah = document.querySelector(".ayah-text");
-  const missionSection = document.getElementById("mission");
 
   const dhikr = ["Allahu Akbar", "Subhanallah", "Alhamdulillah", "La ilaha illallah", "Astaghfirullah"];
   const ayahs = [
@@ -28,38 +25,25 @@ document.addEventListener("DOMContentLoaded", function () {
     dhikrIndex = (dhikrIndex + 1) % dhikr.length;
   }, 3000);
 
-  let ayahInterval;
-  function startAyahRotation() {
-    ayahInterval = setInterval(() => {
+  cardText.textContent = "ALLAH IS ONE";
+  setTimeout(() => {
+    setInterval(() => {
       const randomAyah = ayahs[Math.floor(Math.random() * ayahs.length)];
       cardText.textContent = randomAyah;
     }, 5000);
-  }
-
-  // Show "ALLAH IS ONE" for 3s then rotate
-  setTimeout(() => {
-    if (readMoreBtn.style.display !== "none") return;
-    startAyahRotation();
   }, 3000);
 
   readMoreBtn.addEventListener("click", () => {
     textContent.classList.remove("fade");
-    cardAyah.classList.remove("fade");
     extraText.style.display = "inline";
-    ayahExtra.style.display = "inline";
     readMoreBtn.style.display = "none";
     exitBtn.style.display = "inline-block";
-    clearInterval(ayahInterval); // pause random ayah rotation
   });
 
   exitBtn.addEventListener("click", () => {
     textContent.classList.add("fade");
-    cardAyah.classList.add("fade");
     extraText.style.display = "none";
-    ayahExtra.style.display = "none";
     readMoreBtn.style.display = "inline-block";
     exitBtn.style.display = "none";
-    missionSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    startAyahRotation(); // resume rotation
   });
 });
