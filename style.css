@@ -10,8 +10,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #2cc3b5; /* ছবির মত সবুজ */
-  padding: 10px 20px;
+  background-color: #2cc3b5; 
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,6 +36,7 @@
   font-size: 14px;
   font-weight: bold;
   font-family: sans-serif;
+  margin-top: 8px;
 }
 
 /* Main content to make scroll visible */
