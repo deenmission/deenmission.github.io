@@ -27,6 +27,7 @@ body {
 .logo {
   height: 50px;
   width: auto;
+  float: left;
 }
 
 .menu-icon {
