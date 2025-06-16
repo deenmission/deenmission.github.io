@@ -112,6 +112,15 @@ main {
   margin-bottom: 12px;
   text-align: left;
 }
+
+   /* HORIZONTAL LINE */
+
+ hr {
+  border: none;
+  height: 2px;
+  background-color: #1a9586; 
+  margin: 20px 0;
+}
   
 .mission-section p {
   font-size: 16px;
