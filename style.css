@@ -112,16 +112,7 @@ main {
   margin-bottom: 12px;
   text-align: left;
 }
-
-.custom-line {
-  border: none;
-  height: 3px;
-  background-color: #1A9586; 
-  width: 60px;
-  margin: 10px 0;
-}
   
-
 .mission-section p {
   font-size: 16px;
   line-height: 1.7;
