@@ -4,11 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DEEN Mission</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Header -->
   <header class="sticky-header">
     <img src="images/deen.png" alt="Logo" class="logo" />
     <div class="welcome-text" id="dynamicText">WELCOME</div>
@@ -16,36 +14,40 @@
   </header>
 
   <main>
-    <!-- Ayah Card -->
     <div class="card ayah-card">
       <h2 id="ayahText">Loading Ayah...</h2>
       <div class="ayah-ref" id="ayahRef"></div>
     </div>
 
-    <!-- Our Mission Section -->
-    <div class="mission-section">
-      <h2>Our Mission</h2>
-      <p>
-<hr>
-We believe in a world guided by the principles of the Qur’an and Sunnah. Our mission is to inspire individuals to return to the pure teachings of Islam and live their lives in accordance with divine guidance. Through authentic knowledge, community engagement, and spiritual enrichment, we aim to build a generation grounded in faith, character, and purpose.
-      </p>
+    <div class="search-wrapper">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search Article" />
     </div>
+
+    <div class="scroll-container" id="cardContainer"></div>
   </main>
 
-  <!-- Footer -->
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content" id="modalContent">
+      <h2 id="modalTitle"></h2>
+      <hr />
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
   <footer>
     <h3>Get in touch</h3>
     <div class="row-inline">
       <a href="mailto:deenmission@gmail.com" class="link-box">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email" />
+        <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email" />
         Email
       </a>
       <a href="tel:+8801521731371" class="link-box">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone" />
+        <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone" />
         Phone
       </a>
       <a href="https://wa.me/8801521731371" class="link-box" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+        <img src="https://img.icons8.com/ios-filled/50/000000/whatsapp.png" alt="WhatsApp" />
         WhatsApp
       </a>
     </div>
@@ -54,14 +56,13 @@ We believe in a world guided by the principles of the Qur’an and Sunnah. Our m
     <div class="row-inline">
       <a href="https://facebook.com/deenmission" target="_blank" class="link-box">
         Facebook
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png" alt="Facebook" />
+        <img src="https://img.icons8.com/ios-filled/50/000000/facebook--v1.png" alt="Facebook" />
       </a>
       <a href="https://youtube.com/@deenmission_org" target="_blank" class="link-box">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube" />
+        <img src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png" alt="YouTube" />
         YouTube
       </a>
     </div>
-
     <div class="copyright">
       © 2025 Deen Mission. All rights reserved.
     </div>
