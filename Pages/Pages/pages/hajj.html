@@ -1,1 +1,257 @@
+ <!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>হজের গুরুত্ব</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'SolaimanLipi', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fce4ec);
+      margin: 0;
+      padding: 0;
+      color: #2c3e50;
+    }
 
+    header {
+      background-color: #35a392;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .toc-container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .toc-toggle {
+      background: transparent;
+      color: #35a392;
+      border: 2px solid #35a392;
+      width: 100%;
+      padding: 15px 20px;
+      font-size: 20px;
+      text-align: left;
+      cursor: pointer;
+      border-radius: 8px;
+      position: relative;
+    }
+    .toc-toggle::after {
+      content: '▼';
+      position: absolute;
+      right: 20px;
+      transition: transform 0.3s ease;
+    }
+    .toc-toggle.active::after {
+      transform: rotate(180deg);
+    }
+
+    .toc-content {
+      display: none;
+      background-color: white;
+      border: 2px solid #35a392;
+      border-top: none;
+      padding: 20px;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    .toc-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .toc-content ul li {
+      margin-bottom: 10px;
+    }
+    .toc-content a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-size: 18px;
+    }
+    .toc-content a:hover {
+      color: #00796b;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #35a392;
+    }
+    p, ul, ol {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    .quote {
+      background-color: #f9f9f9;
+      border-left: 5px solid #35a392;
+      padding: 15px;
+      font-style: italic;
+      margin: 20px 0;
+    }
+
+    footer {
+      background-color: #263238;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .footer-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .facebook-icon {
+      background-color: #3b5998;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .youtube-icon {
+      background-color: #FF0000;
+    }
+    .youtube-icon .play-icon {
+      width: 0;
+      height: 0;
+      border-left: 12px solid white;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      margin-left: 2px;
+    }
+
+    .copyright {
+      color: #b0bec5;
+      font-size: 14px;
+      margin-top: 20px;
+      font-size:12px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+      .toc-toggle {
+        font-size: 18px;
+      }
+      .toc-content a {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>হজের গুরুত্ব</h1>
+  <p>হজ মুমিনের জীবনের পূর্ণতা</p>
+</header>
+
+<div class="toc-container">
+  <button class="toc-toggle" onclick="toggleTOC(this)">বিষয়বস্তু</button>
+  <div class="toc-content" id="tocBox">
+    <ul>
+      <li><a href="#keno">হজ কেন করব?</a></li>
+      <li><a href="#upokarita">হজের উপকারিতা</a></li>
+      <li><a href="#phases">হজের প্রধান কার্যক্রম</a></li>
+      <!-- <li><a href="#media">ছবি ও ভিডিও</a></li> -->
+      <li><a href="#end">শেষ কথা</a></li>
+    </ul>
+  </div>
+</div>
+
+<main>
+
+  <h2 id="keno">হজ কেন করব?</h2>
+  <p>হজ ইসলাম ধর্মের পঞ্চম স্তম্ভ। এটি সামর্থ্যবান মুসলমানদের জন্য ফরজকৃত একটি মহান ইবাদত...</p>
+
+  <div class="quote">
+    “এবং মানুষের উপর আল্লাহর উদ্দেশ্যে কাবা ঘরের হজ করা ফরজ, যদি কারো সেখানে যাওয়ার সামর্থ্য থাকে।” <br>– (সুরা আলে ইমরান: আয়াত ৯৭)
+  </div>
+
+  <h2 id="upokarita">হজের উপকারিতা</h2>
+  <ul>
+    <li>আত্মিক পরিশুদ্ধি ও পাপ মোচন</li>
+    <li>আল্লাহর নৈকট্য লাভ</li>
+    <li>বিশ্বব্যাপী মুসলিম ঐক্য ও ভ্রাতৃত্ববোধ</li>
+    <li>ধৈর্য, সহনশীলতা ও আত্মনিয়ন্ত্রণের শিক্ষা</li>
+    <li>ইবাদতের প্রতি গভীর অনুরাগ সৃষ্টি</li>
+  </ul>
+
+  <h2 id="phases">হজের প্রধান কার্যক্রম</h2>
+  <ol>
+    <li>ইহরাম বাঁধা</li>
+    <li>তাওয়াফ</li>
+    <li>সাঈ (সাফা-মারওয়া)</li>
+    <li>আরাফাতে অবস্থান</li>
+    <li>মুযদালিফা ও মিনায় রাত যাপন</li>
+    <li>শয়তানকে পাথর নিক্ষেপ</li>
+    <li>কুরবানি</li>
+    <li>বিদায়ী তাওয়াফ</li>
+  </ol>
+
+  <!-- 
+  <h2 id="media">ছবি ও ভিডিও</h2>
+  <img src="your-image.jpg" alt="হজের ছবি" style="width:100%;max-width:600px;display:block;margin:20px auto;">
+  <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+  -->
+
+  <h2 id="end">শেষ কথা</h2>
+  <p>
+    হজ কেবল একটি আনুষ্ঠানিক ইবাদত নয়, এটি আত্মার পূর্ণতার পথ। একজন মুসলমানের জন্য হজ একটি জীবনের শিক্ষা, আত্মশুদ্ধির বাস্তব অনুশীলন...
+  </p>
+</main>
+
+<footer>
+  <div class="footer-title">Follow us</div>
+  <div class="social-icons">
+    <a href="https://facebook.com/deenmission" target="_blank" aria-label="Facebook" class="facebook-icon">f</a>
+    <a href="https://youtube.com/@deenmission_org" target="_blank" aria-label="YouTube" class="youtube-icon">
+      <div class="play-icon"></div>
+    </a>
+  </div>
+  <div class="copyright">
+    &copy; DEEN | Our journey to light
+  </div>
+</footer>
+
+<script>
+  function toggleTOC(btn) {
+    const box = document.getElementById("tocBox");
+    const isOpen = box.style.display === "block";
+    box.style.display = isOpen ? "none" : "block";
+    btn.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
