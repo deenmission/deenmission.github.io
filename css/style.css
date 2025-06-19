@@ -261,26 +261,6 @@ main {
   margin-bottom: 25px;
 }
 
-  /* 🔹 Footer (Updated Design) */
-footer {
-  background: linear-gradient(135deg, #2f8c7f, #1c5d52);
-  color: #fff;
-  padding: 60px 20px 30px;
-  text-align: center;
-  border-top: 3px solid #e6e6e6;
-}
-
-footer h3 {
-  font-size: 13px;
-  margin: 20px 0 15px;
-  font-weight: 600;
-}
-
-footer .copyright {
-  font-size: 10px;
-  color: #dddddd;
-  margin-top: 15px;
-}
 
 .link-box:hover {
   transform: translateY(-2px) scale(1.02);
@@ -313,7 +293,7 @@ footer .copyright {
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   padding-top: 3.5rem;
-  
+
  opacity: 0;
   pointer-events: none;
   transform: translateX(100%) translateZ(0);
