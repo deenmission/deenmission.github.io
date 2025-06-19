@@ -261,23 +261,32 @@ main {
   margin-bottom: 25px;
 }
 
-/* 🔹 Footer */
+  /* 🔹 Footer (Updated Design) */
 footer {
-  background-color: #35a392;
+  background: linear-gradient(135deg, #2f8c7f, #1c5d52);
   color: #fff;
-  padding: 20px 10px;
+  padding: 60px 20px 30px;
   text-align: center;
-}
-footer h3 {
-  font-size: 20px;
-  margin-bottom: 20px;
+  border-top: 3px solid #e6e6e6;
 }
 
- footer .copyright {
-  font-size: 12px;
-  color: #ccc;
-  margin-top: 10px;
+footer h3 {
+  font-size: 13px;
+  margin: 20px 0 15px;
+  font-weight: 600;
 }
+
+footer .copyright {
+  font-size: 10px;
+  color: #dddddd;
+  margin-top: 15px;
+}
+
+.link-box:hover {
+  transform: translateY(-2px) scale(1.02);
+  background-color: #f0f0f0;
+}
+
 
 /* 🔹 Highlights */
 .highlight {
