@@ -371,7 +371,7 @@ transform: translateX(0) translateZ(0);
 
 
 /* === Footer === */
- 
+
 {
   box-sizing: border-box;
   margin: 0;
@@ -489,4 +489,4 @@ footer h3 {
     font-size: 12px;
     padding: 5px 10px;
   }
-}
+  }
