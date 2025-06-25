@@ -164,7 +164,7 @@ main {
   will-change: transform, opacity;
 }
 
- /* 🔹 No Results Card */
+/* 🔹 No Results Card */
 #noResultsCard {
   display: none;
   background-color: #fff5f5;
@@ -251,22 +251,10 @@ main {
   outline-offset: 2px;
 }
 
-/* 🔹 Row Inline */
-.row-inline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-bottom: 25px;
-}
-
-
 .link-box:hover {
   transform: translateY(-2px) scale(1.02);
   background-color: #f0f0f0;
 }
-
 
 /* 🔹 Highlights */
 .highlight {
@@ -280,7 +268,7 @@ main {
 
 /* 🔹 Slide-In Side Menu */
 .menu {
-  position:fixed;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
@@ -288,20 +276,14 @@ main {
   background-color: #fff;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
   padding-top: 3.5rem;
-
- opacity: 0;
+  opacity: 0;
   pointer-events: none;
   transform: translateX(100%) translateZ(0);
-transition: 
-  transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-  opacity 0.3s ease-in-out;
-  }
-
+  transition: 
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s ease-in-out;
+}
 
 .menu .close-btn {
   position: absolute;
@@ -333,19 +315,11 @@ transition:
 }
 
 .menu.show {
-  transform: translateX(0%);
+  transform: translateX(0%) translateZ(0);
   opacity: 1;
-pointer-events: auto;
-transform: translateX(0) translateZ(0);
- }
-.menu .close-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1.25rem;
-  font-size: 1.5rem;
-  color: #333;
-  cursor: pointer;
+  pointer-events: auto;
 }
+
 .menu ul {
   list-style: none;
   padding: 0;
@@ -369,22 +343,7 @@ transform: translateX(0) translateZ(0);
   background-color: #f0f0f0;
 }
 
-
 /* === Footer === */
-
-{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-/* === Footer Container === */
 footer {
   background: linear-gradient(135deg, #2f8c7f, #1c5d52);
   color: #fff;
@@ -419,7 +378,6 @@ footer h3 {
   font-weight: 600;
 }
 
-/* === Common Button Style === */
 .chip {
   display: flex;
   align-items: center;
@@ -431,6 +389,7 @@ footer h3 {
   font-size: 12px;
   transition: 0.3s ease;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .chip img {
@@ -443,7 +402,11 @@ footer h3 {
   background-color: #f0f0f0;
 }
 
-/* Small & Large Variants */
+.chip:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .chip-sm {
   padding: 5px 10px;
   height: 25px;
@@ -456,7 +419,6 @@ footer h3 {
   min-width: 110px;
 }
 
-/* === Layout Groups === */
 .footer-nav,
 .row-inline {
   display: flex;
@@ -466,14 +428,12 @@ footer h3 {
   margin-bottom: 25px;
 }
 
-/* === Copyright === */
 .copyright {
   font-size: 10px;
   color: #dddddd;
   margin-top: 15px;
 }
 
-/* === Responsive Design === */
 @media (max-width: 600px) {
   .footer-description {
     font-size: 15px;
@@ -489,4 +449,4 @@ footer h3 {
     font-size: 12px;
     padding: 5px 10px;
   }
-  }
+}
