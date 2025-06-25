@@ -1,0 +1,125 @@
+:root {
+  --green-50: #ecfdf5;
+  --green-100: #d1fae5;
+  --green-600: #16a34a;
+  --gray-50:  #ffffff;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --primary-color: #35a392;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--gray-700);
+  background: linear-gradient(135deg, var(--green-50), var(--gray-50) 50%, var(--green-100));
+}
+
+.container {
+  max-width: 1120px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+  font-size: 18px;
+}
+
+.main-wrapper {
+  padding-top: 2rem;
+  min-height: calc(100vh - 2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* ---------- LOGO & ANIMATIONS ---------- */
+.top-logo {
+  display: block;
+  margin: 2rem auto 0;
+  height: 3rem;
+  object-fit: contain;
+  animation: logoEntrance 1.1s ease-out forwards,
+             logoFloat 6s ease-in-out 1.1s infinite;
+  transform-origin: center;
+}
+
+/* Entrance animation */
+@keyframes logoEntrance {
+  0%   { opacity: 0; transform: translateY(-32px) scale(0.82); }
+  60%  { opacity: 1; transform: translateY(0)    scale(1.06); }
+  100% { opacity: 1; transform: translateY(0)    scale(1);    }
+}
+
+/* Subtle floating loop */
+@keyframes logoFloat {
+  0%   { transform: translateY(0)    scale(1); }
+  50%  { transform: translateY(-6px) scale(1.015); }
+  100% { transform: translateY(0)    scale(1); }
+}
+/* ---------- /LOGO & ANIMATIONS ---------- */
+
+.impact { padding: 1rem 0 2rem; }
+
+.section-subtitle {
+  max-width: 40rem;
+  margin: 0 auto;
+  color: var(--gray-600);
+  line-height: 1.4;
+  text-align: center;
+  font-size: 18px;
+}
+
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 3rem 0;
+  padding: 0 1rem;
+}
+
+.members-card {
+  flex: 1 1 280px;
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  padding: 0.8rem 1rem;
+  background-color: var(--gray-50);
+  box-shadow: 0 4px 10px rgb(22 163 74 / 0.15);
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--gray-700);
+}
+
+.members-card .label {
+  flex: 1;
+  user-select: none;
+  color: var(--primary-color);
+}
+
+.members-card .circle {
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  background-color: papayawhip;
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  box-shadow: 0 0 0 3px var(--gray-50);
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
