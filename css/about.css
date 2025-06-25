@@ -43,9 +43,12 @@ body {
   margin: 2rem auto 0;
   height: 3rem;
   object-fit: contain;
-  animation: logoEntrance 1.1s ease-out forwards,
-             logoFloat 6s ease-in-out 1.1s infinite;
+  animation: logoEntrance 1.1s ease-out forwards, logoFloat 6s ease-in-out 1.1s infinite;
   transform-origin: center;
+
+  /* রঙ বদলের জন্য filter যোগ করা হলো */
+  filter: brightness(0) saturate(100%) invert(61%) sepia(33%) saturate(556%) hue-rotate(121deg) brightness(90%) contrast(87%);
+}
 }
 
 /* Entrance animation */
