@@ -40,8 +40,8 @@ body {
 /* ---------- LOGO & ANIMATIONS ---------- */
 .top-logo {
   display: block;
-  margin: 2rem auto 0;
-  height: 3rem;
+  margin: 0rem auto 0;
+  height: 5rem;
   object-fit: contain;
   animation: logoEntrance 1.1s ease-out forwards, logoFloat 6s ease-in-out 1.1s infinite;
   transform-origin: center;
