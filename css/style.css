@@ -129,7 +129,7 @@ main {
 .search-input {
   padding: 10px 16px;
   font-size: 1rem;
-  border: 2px solid transparent;
+  border: 2px solid #8ed9cd;
   border-radius: 8px;
   outline: none;
   width: 90%;
@@ -139,6 +139,7 @@ main {
 }
 .search-input:focus {
   border-color: #35a392;
+  
 }
 
 /* 🔹 Scroll Container */
