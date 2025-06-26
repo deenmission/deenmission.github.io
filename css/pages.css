@@ -155,6 +155,7 @@ footer h3 {
   font-weight: 600;
 }
 
+
 /* === Chip/Button Style === */
 .chip {
   display: flex;
@@ -168,6 +169,10 @@ footer h3 {
   transition: 0.3s ease;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
   padding: 5px 10px;
+  border: none;
+  outline: none !important;
+  background-clip: padding-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .chip img {
@@ -178,6 +183,16 @@ footer h3 {
 .chip:hover {
   transform: translateY(-2px) scale(1.02);
   background-color: #f0f0f0;
+}
+
+.chip:focus,
+.chip:focus-visible,
+.chip:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none;
+  background-clip: padding-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .chip-sm {
@@ -192,14 +207,6 @@ footer h3 {
   min-width: 110px;
 }
 
-/* ✅ Focus Fix — Remove square outline on click/focus */
-.chip:focus,
-.chip:focus-visible,
-.chip:active {
-  outline: none !important;
-  box-shadow: none !important;
-  border: none !important;
-}
 
 /* === Layout Groupings (Flex Wrappers) === */
 .footer-nav,
