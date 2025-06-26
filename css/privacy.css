@@ -27,7 +27,7 @@ body {
 }
 
 .logo img {
-  width: 250px;           /* আগে ছিল 60px → এখন একটু বড় */
+  width: 230px;           /* আগে ছিল 60px → এখন একটু বড় */
   height: auto;
   object-fit: contain;
 
