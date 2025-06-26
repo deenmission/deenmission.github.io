@@ -160,6 +160,11 @@ footer h3 {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
+ .chip {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
 .chip img {
   width: 16px;
   height: 16px;
@@ -182,6 +187,13 @@ footer h3 {
   height: 25px;
   min-width: 110px;
 }
+
+.chip:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #35a39266;
+}
+
+
 
 /* === Layout Groups === */
 .footer-nav,
@@ -212,7 +224,3 @@ footer h3 {
     gap: 10px;
   }
 
-  .chip {
-    font-size: 12px;
-    padding: 5px 10px;
-  }
