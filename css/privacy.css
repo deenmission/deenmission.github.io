@@ -22,12 +22,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0 20px;
+  padding: 20px 0 10px; /* উপরে তুলতে padding কমানো হয়েছে */
+  margin-top: -20px;     /* আরও উপরে নিতে চাইলে এটা adjust করা যাবে */
 }
 
 .logo img {
-  width: 60px;
+  width: 80px;           /* আগে ছিল 60px → এখন একটু বড় */
   height: auto;
+  object-fit: contain;
+
+  /* লোগোর রঙ পরিবর্তনের জন্য filter */
+  filter: brightness(0) saturate(100%) invert(61%) sepia(33%) saturate(556%) hue-rotate(121deg) brightness(90%) contrast(87%);
 }
 
 section {
