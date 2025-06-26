@@ -23,11 +23,11 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px 0 10px; /* উপরে তুলতে padding কমানো হয়েছে */
-  margin-top: -20px;     /* আরও উপরে নিতে চাইলে এটা adjust করা যাবে */
+  margin-top: 20px;     /* আরও উপরে নিতে চাইলে এটা adjust করা যাবে */
 }
 
 .logo img {
-  width: 80px;           /* আগে ছিল 60px → এখন একটু বড় */
+  width: 100px;           /* আগে ছিল 60px → এখন একটু বড় */
   height: auto;
   object-fit: contain;
 
