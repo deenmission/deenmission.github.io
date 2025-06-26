@@ -1,4 +1,10 @@
-/* === Global Styles === */
+/* === Root & Base Reset === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -18,12 +24,13 @@ header {
   text-align: center;
   padding: 20px 10px;
 }
+
 header h1 {
   margin: 0;
   font-size: 36px;
 }
 
-/* === Dropdown TOC === */
+/* === Dropdown TOC Section === */
 .toc-container {
   max-width: 900px;
   margin: 20px auto;
@@ -84,7 +91,7 @@ header h1 {
   color: #00796b;
 }
 
-/* === Main Content === */
+/* === Main Content Section === */
 main {
   max-width: 900px;
   margin: 30px auto;
@@ -98,7 +105,9 @@ h2 {
   color: #35a392;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
   font-size: 18px;
   line-height: 1.7;
 }
@@ -146,7 +155,7 @@ footer h3 {
   font-weight: 600;
 }
 
-/* === Button Styles (.chip) === */
+/* === Chip/Button Style === */
 .chip {
   display: flex;
   align-items: center;
@@ -156,9 +165,9 @@ footer h3 {
   text-decoration: none;
   border-radius: 25px;
   font-size: 12px;
-  padding: 5px 10px;
   transition: 0.3s ease;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  padding: 5px 10px;
 }
 
 .chip img {
@@ -171,14 +180,6 @@ footer h3 {
   background-color: #f0f0f0;
 }
 
-/* Remove square on focus */
-.chip:focus,
-.chip:focus-visible {
-  outline: none;
-  box-shadow: none;
-}
-
-/* Small & Large Variants */
 .chip-sm {
   padding: 5px 10px;
   height: 25px;
@@ -191,7 +192,16 @@ footer h3 {
   min-width: 110px;
 }
 
-/* === Layout Groups === */
+/* ✅ Focus Fix — Remove square outline on click/focus */
+.chip:focus,
+.chip:focus-visible,
+.chip:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* === Layout Groupings (Flex Wrappers) === */
 .footer-nav,
 .row-inline {
   display: flex;
@@ -201,7 +211,7 @@ footer h3 {
   margin-bottom: 25px;
 }
 
-/* === Copyright === */
+/* === Copyright Text === */
 .copyright {
   font-size: 10px;
   color: #dddddd;
