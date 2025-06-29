@@ -17,13 +17,6 @@ body {
   background: linear-gradient(135deg, var(--green-50), var(--gray-50) 50%, var(--green-100));
 }
 
-.container {
-  max-width: 1120px;
-  padding: 0 1.5rem;
-  margin: 0 auto;
-  width: 100%;
-}
-
 .text-center {
   text-align: center;
   font-size: 18px;
@@ -48,7 +41,6 @@ body {
 
   /* রঙ বদলের জন্য filter যোগ করা হলো */
   filter: brightness(0) saturate(100%) invert(61%) sepia(33%) saturate(556%) hue-rotate(121deg) brightness(90%) contrast(87%);
-}
 }
 
 /* Entrance animation */
