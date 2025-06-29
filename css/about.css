@@ -8,18 +8,16 @@
   --primary-color: #35a392;
 }
 
-*, *::before, *::after { box-sizing: border-box; }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   color: var(--gray-700);
   background: linear-gradient(135deg, var(--green-50), var(--gray-50) 50%, var(--green-100));
-}
-
-.text-center {
-  text-align: center;
-  font-size: 18px;
+  padding: 0 1rem; /* যেন কনটেন্ট একদম স্ক্রিনের কিনারায় না যায় */
 }
 
 .main-wrapper {
@@ -28,6 +26,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.text-center {
+  text-align: center;
+  font-size: 18px;
 }
 
 /* ---------- LOGO & ANIMATIONS ---------- */
@@ -39,18 +42,15 @@ body {
   animation: logoEntrance 1.1s ease-out forwards, logoFloat 6s ease-in-out 1.1s infinite;
   transform-origin: center;
 
-  /* রঙ বদলের জন্য filter যোগ করা হলো */
   filter: brightness(0) saturate(100%) invert(61%) sepia(33%) saturate(556%) hue-rotate(121deg) brightness(90%) contrast(87%);
 }
 
-/* Entrance animation */
 @keyframes logoEntrance {
   0%   { opacity: 0; transform: translateY(-32px) scale(0.82); }
   60%  { opacity: 1; transform: translateY(0)    scale(1.06); }
   100% { opacity: 1; transform: translateY(0)    scale(1);    }
 }
 
-/* Subtle floating loop */
 @keyframes logoFloat {
   0%   { transform: translateY(0)    scale(1); }
   50%  { transform: translateY(-6px) scale(1.015); }
@@ -58,15 +58,17 @@ body {
 }
 /* ---------- /LOGO & ANIMATIONS ---------- */
 
-.impact { padding: 1rem 0 2rem; }
+.impact {
+  padding: 1rem 0 2rem;
+}
 
 .section-subtitle {
-  max-width: 40rem;
-  margin: 0 auto;
   color: var(--gray-600);
   line-height: 1.4;
   text-align: center;
   font-size: 18px;
+  padding: 0 1rem;
+  max-width: 100%;
 }
 
 .members-container {
