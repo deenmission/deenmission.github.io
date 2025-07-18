@@ -8,16 +8,18 @@
 }
 
 .profile-logo {
-  background-color: white;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 50%;           /* রাউন্ড */
+  object-fit: cover;            /* স্কয়ার ইমেজ ঠিকভাবে কাটবে */
+  background-color: white;
   cursor: pointer;
-  transition: box-shadow 0.2s ease, outline 0.2s ease;
+  transition: outline 0.2s ease;
+  outline: none;
 }
 
 .profile-logo:focus {
-  outline: 2px solid #35a392;
-  outline-offset: 2px;
+  outline: 2px solid #35a392;   /* রাউন্ড রিং */
+  outline-offset: 2px;          /* কাছে দেখাবে */
+  border-radius: 50%;           /* outline রাউন্ড থাকবে */
 }
