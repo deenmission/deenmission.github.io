@@ -1,7 +1,7 @@
 .profile-section {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10;
+  left: 12;
   padding: 1rem;
   z-index: 10;
   max-width: 30px;
