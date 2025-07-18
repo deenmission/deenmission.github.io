@@ -10,14 +10,6 @@ const closeBtn = document.getElementById('closeMenuBtn');
 const noResultsCard = document.getElementById("noResultsCard");
 
 // ==================== 🔹 Data Constants ====================
-const dhikr = [
-  "Allahu Akbar",
-  "Subhanallah",
-  "Alhamdulillah",
-  "La ilaha illallah",
-  "Astaghfirullah"
-];
-
 const ayahs = [
   { text: "বল,তিনিই আল্লাহ,এক ও অদ্বিতীয়।", ref: "Qur'an ১১২:১" },
   { text: "নিশ্চয়ই কষ্টের সাথে রয়েছে স্বস্তি।", ref: "Qur'an ৯৪:৬" },
@@ -32,22 +24,6 @@ const cards = [
   { title: "রমজানের গুরুত্ব", details: "রমজান মাসের গুরুত্ব ...", link: "pages/siam.html" },
   { title: "হজের গুরুত্ব", details: "হজ ইসলামের পঞ্চস্তম্ভ ...", link: "pages/hajj.html" }
 ];
-
-// ==================== 🔹 Dynamic Dhikr ====================
-let dhikrIndex = 0;
-
-function rotateDhikr() {
-  if (!dynamicText) return;
-
-  dynamicText.textContent = dhikr[dhikrIndex];
-  dynamicText.style.animation = "none";
-  void dynamicText.offsetWidth;
-  dynamicText.style.animation = "fadeSlide 1s ease-in-out";
-
-  dhikrIndex = (dhikrIndex + 1) % dhikr.length;
-}
-
-setInterval(rotateDhikr, 3000);
 
 // ==================== 🔹 Random Ayah ====================
 function showRandomAyah() {
@@ -162,4 +138,4 @@ if (menu) {
       menu.classList.remove('show');
     }
   });
-                         }
+}
