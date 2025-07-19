@@ -87,7 +87,8 @@ header {
 
 /* === Main Content Section === */
 main {
-  max-width: 900px;
+  width: 100%;
+  max-width: none;
   margin: 30px auto;
   padding: 20px;
   background-color: #fff;
@@ -140,7 +141,8 @@ body.menu-opened footer {
 
 .footer-description {
   font-size: 16px;
-  max-width: 720px;
+  width:100%%;
+  max-width: none;
   margin: 5px auto 0 auto;
   line-height: 1.3;
 }
