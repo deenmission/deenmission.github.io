@@ -1,4 +1,6 @@
- function initMenu(menuIcon, menu, closeBtn) {
+ /* import পরবর্তীতে শুধু function এর পূর্বে import লিখে দিলেই index.html এ একটি কোড দিয়েই সকল js লোড হবে*/
+
+function initMenu(menuIcon, menu, closeBtn) {
   menuIcon?.addEventListener('click', () => {
     menu.classList.toggle('show');
     document.body.classList.toggle('menu-opened');
