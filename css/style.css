@@ -45,28 +45,7 @@ body {
   outline-offset: 2px;
 }
 
-/* 🔹 Welcome Text (Centered Title) */
-.welcome-text {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-weight: bold;
-  font-size: 1.125rem;
-  animation: fadeSlide 1s ease-in-out;
-  white-space: nowrap;
-}
 
-@keyframes fadeSlide {
-  0% {
-    opacity: 0;
-    transform: translateX(-50%) translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-}
 
 /* 🔹 Main Content */
 main {
