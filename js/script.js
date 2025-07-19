@@ -1,4 +1,4 @@
-// ==================== 🔹 DOM References ====================
+// ====🔹 DOM References =======
 const searchInput = document.getElementById("searchInput");
 const cardContainer = document.getElementById("cardContainer");
 const menuIcon = document.querySelector('.menu-icon');
@@ -6,13 +6,13 @@ const menu = document.getElementById('mainMenu');
 const closeBtn = document.getElementById('closeMenuBtn');
 const noResultsCard = document.getElementById("noResultsCard");
 
-// ==================== 🔹 Data ====================
+// === 🔹 Data ====
 const cards = [
   { title: "সালাতের গুরুত্ব", details: "সালাত বা নামাজ ...", link: "pages/salat.html" },
   { title: "রমজানের গুরুত্ব", details: "রমজান মাসের গুরুত্ব ...", link: "pages/siam.html" }
 ];
 
-// ==================== 🔹 Generate Cards ====================
+// ==== 🔹 Generate Cards =====
 function generateCards() {
   if (!cardContainer) return;
   cards.forEach(data => {
@@ -27,7 +27,7 @@ function generateCards() {
 }
 generateCards();
 
-// ==================== 🔹 Intersection Observer ====================
+// ===🔹 Intersection Observer =====
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) entry.target.classList.add("visible");
@@ -36,7 +36,7 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll(".fade-card").forEach(card => observer.observe(card));
 
-// ==================== 🔹 Search Filter ====================
+// ==== 🔹 Search Filter ========
 if (searchInput) {
   searchInput.addEventListener("input", function () {
     const keyword = this.value.toLowerCase();
@@ -73,7 +73,7 @@ if (searchInput) {
   });
 }
 
-// ==================== 🔹 Menu Toggle ====================
+// ====== 🔹 Menu Toggle =====
 menuIcon?.addEventListener('click', () => {
   menu.classList.toggle('show');
   document.body.classList.toggle('menu-opened');
@@ -83,7 +83,7 @@ closeBtn?.addEventListener('click', () => {
   document.body.classList.remove('menu-opened');
 });
 
-// ==================== 🔹 Swipe to Close Menu (Mobile) ====================
+// ====== 🔹 Swipe to Close Menu (Mobile) =======
 let touchStartX = 0;
 menu?.addEventListener('touchstart', e => touchStartX = e.touches[0].clientX);
 menu?.addEventListener('touchend', e => {
