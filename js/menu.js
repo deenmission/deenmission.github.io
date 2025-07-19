@@ -1,4 +1,4 @@
-export function initMenu(menuIcon, menu, closeBtn) {
+ function initMenu(menuIcon, menu, closeBtn) {
   menuIcon?.addEventListener('click', () => {
     menu.classList.toggle('show');
     document.body.classList.toggle('menu-opened');
