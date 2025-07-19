@@ -1,0 +1,14 @@
+/* ✅ layout.css */
+
+main {
+  padding: 6.25rem 1.25rem 2.5rem;
+  transition: var(--transition-fast);
+}
+
+.scroll-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
