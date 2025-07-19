@@ -6,15 +6,9 @@ const menu = document.getElementById('mainMenu');
 const closeBtn = document.getElementById('closeMenuBtn');
 const noResultsCard = document.getElementById("noResultsCard");
 
-// === 🔹 Data ====
-const cards = [
-  { title: "সালাতের গুরুত্ব", details: "সালাত বা নামাজ ...", link: "pages/salat.html" },
-  { title: "রমজানের গুরুত্ব", details: "রমজান মাসের গুরুত্ব ...", link: "pages/siam.html" }
-];
-
 // ==== 🔹 Generate Cards =====
 function generateCards() {
-  if (!cardContainer) return;
+  if (!cardContainer || !cards) return;
   cards.forEach(data => {
     const div = document.createElement("div");
     div.className = "card fade-card";
