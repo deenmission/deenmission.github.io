@@ -5,44 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
   <title>DEEN Mission</title>  
 
-<!-- css links-->
-
-<link rel="stylesheet" href="css/style.css">  
-
-<link rel="stylesheet" href="css/pages.css">
-
-<link rel="stylesheet" href="css/profile.css">
-
-
-
+  <!-- css links-->
+  <link rel="stylesheet" href="css/style.css">  
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/profile.css">
 </head>  
 
-       <!--Header-->
-
 <body>  
-  <header class="sticky-header">  
-    <!-- ✅ ঠিক করা লোগো -->
+
+  <!-- ✅ Header -->
+  <header class="sticky-header shift-on-menu">  
     <img src="images/deen.png" alt="Logo" class="logo" />  
- <div class="menu-icon">☰</div>
+    <div class="menu-icon">☰</div>
   </header>  
 
-  <!-- menu -->
+  <!-- ✅ Menu -->
   <nav class="menu" id="mainMenu">  
     <button class="close-btn" id="closeMenuBtn">&times;</button>
-    
 
-<!--profile -->
-
-
-<div class="profile-section">
-  <img src="images/user-profile.jpg" onerror="this.src='images/default-profile.png'" alt="Profile" class="profile-logo"
-tabindex="0"/>
-</div>
-
-<!--এখানে মেনুর ভেতরে পেজ যুক্ত করলে লিংক দিতে হবে। -->
+    <!--profile -->
+    <div class="profile-section">
+      <img src="images/user-profile.jpg" onerror="this.src='images/default-profile.png'" alt="Profile" class="profile-logo" tabindex="0"/>
+    </div>
+    <!--এখানে মেনুর ভেতরে পেজ যুক্ত করলে লিংক দিতে হবে। -->
   </nav>
 
-  <main>  
+  <!-- ✅ Main Content -->
+  <main class="shift-on-menu">  
     <div class="card ayah-card">  
       <h2 id="ayahText">Loading Ayah...</h2>  
       <div class="ayah-ref" id="ayahRef"></div>  
@@ -60,15 +49,12 @@ tabindex="0"/>
     </div>
   </main>  
 
-<!-- Footer -->
-<div id="footer"></div>
+  <!-- ✅ Footer Container -->
+  <div id="footer" class="shift-on-menu"></div>
 
-<!--js links-->
-
-<!-- Footer Loader Script -->
-<script src="js/load-footer.js"></script>
-
-<script src="js/script.js"></script>
+  <!-- ✅ JS Links -->
+  <script src="js/load-footer.js"></script>
+  <script src="js/script.js"></script>
 
 </body>  
 </html>
