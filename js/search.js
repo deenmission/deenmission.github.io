@@ -1,4 +1,4 @@
- function initSearch(searchInput, cardContainer, noResultsCard) {
+/* import */ function initSearch(searchInput, cardContainer, noResultsCard) {
   if (!searchInput) return;
   searchInput.addEventListener("input", function () {
     const keyword = this.value.toLowerCase();
