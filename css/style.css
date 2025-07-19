@@ -53,6 +53,16 @@ main {
   transition: all 0.3s ease;
 }
 
+/* এটা কন্টেইনারে আনলিমিটেড করে */
+
+.scroll-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 /* 🔹 Card */
  
 .card {
