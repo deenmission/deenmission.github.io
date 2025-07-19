@@ -1,0 +1,23 @@
+/* ✅ button.css */
+
+.read-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  float: right;
+  transition: background-color var(--transition-fast);
+}
+
+.read-btn:hover {
+  background-color: #2a867a;
+}
+
+.read-btn:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
