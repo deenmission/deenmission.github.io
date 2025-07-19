@@ -1,4 +1,4 @@
-export function generateCards(cards, cardContainer) {
+ function generateCards(cards, cardContainer) {
   if (!cardContainer || !cards) return;
   cards.forEach(data => {
     const div = document.createElement("div");
