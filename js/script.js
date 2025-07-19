@@ -21,7 +21,8 @@ const ayahs = [
 
 const cards = [
   { title: "সালাতের গুরুত্ব", details: "সালাত বা নামাজ ...", link: "pages/salat.html" },
-  { title: "রমজানের গুরুত্ব", details: "রমজান মাসের গুরুত্ব ...", link: "pages/siam.html" } ];
+  { title: "রমজানের গুরুত্ব", details: "রমজান মাসের গুরুত্ব ...", link: "pages/siam.html" }
+];
 
 // ==================== 🔹 Random Ayah ====================
 function showRandomAyah() {
@@ -111,12 +112,14 @@ if (searchInput) {
 if (menuIcon && menu) {
   menuIcon.addEventListener('click', function () {
     menu.classList.toggle('show');
+    document.body.classList.toggle('menu-opened'); // ✅ যোগ করা হয়েছে
   });
 }
 
 if (closeBtn && menu) {
   closeBtn.addEventListener('click', function () {
     menu.classList.remove('show');
+    document.body.classList.remove('menu-opened'); // ✅ যোগ করা হয়েছে
   });
 }
 
@@ -134,6 +137,7 @@ if (menu) {
 
     if (swipeDistance > 50) {
       menu.classList.remove('show');
+      document.body.classList.remove('menu-opened'); // ✅ নিশ্চিতভাবে মোবাইলেও ক্লোজে ক্লাস রিমুভ হবে
     }
   });
 }
