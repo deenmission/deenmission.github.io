@@ -124,12 +124,12 @@ ol {
 footer {
   background: linear-gradient(135deg, #2f8c7f, #1c5d52);
   color: #fff;
-  padding: 10px 20px 30px;
+  padding: 10px 0 30px;         /* বাম-ডান padding বাদ */
   text-align: center;
   border-top: 3px solid #e6e6e6;
-  width:100%;
-  max-width: none;
-  margin: 0 auto;
+  width: 100vw;                 /* পুরো স্ক্রিন */
+  max-width: 100vw;             /* সীমা তুলে দাও */
+  margin: 0;                    /* margin: 0 auto; বাদ */
   transition: transform 0.3s ease;
 }
 
