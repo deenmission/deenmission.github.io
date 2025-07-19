@@ -127,6 +127,15 @@ footer {
   padding: 10px 20px 30px;
   text-align: center;
   border-top: 3px solid #e6e6e6;
+
+  max-width: 700px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+/* Footer shift when menu opens */
+body.menu-opened footer {
+  transform: translateX(240px);
 }
 
 .footer-logo {
