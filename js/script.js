@@ -21,9 +21,7 @@ const ayahs = [
 
 const cards = [
   { title: "সালাতের গুরুত্ব", details: "সালাত বা নামাজ ...", link: "pages/salat.html" },
-  { title: "রমজানের গুরুত্ব", details: "রমজান মাসের গুরুত্ব ...", link: "pages/siam.html" },
-  { title: "হজের গুরুত্ব", details: "হজ ইসলামের পঞ্চস্তম্ভ ...", link: "pages/hajj.html" }
-];
+  { title: "রমজানের গুরুত্ব", details: "রমজান মাসের গুরুত্ব ...", link: "pages/siam.html" } ];
 
 // ==================== 🔹 Random Ayah ====================
 function showRandomAyah() {
@@ -48,7 +46,7 @@ setInterval(showRandomAyah, 6000);
 function generateCards() {
   if (!cardContainer) return;
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 2; i++) {
     const data = cards[i % cards.length];
     const div = document.createElement("div");
     div.className = "card fade-card";
