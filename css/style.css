@@ -317,8 +317,15 @@ main {
   .menu {
     width: 100vw;
     height: 100vh;
-  }
+    left: 0;
+    right: 0;
+    transform: translateX(100%);
+    }
+    
+    .menu.show {
+       transform: translateX(0);
 }
+  }
 
 @media (min-width: 769px) {
   .menu {
