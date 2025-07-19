@@ -1,0 +1,41 @@
+/* ✅ responsive.css */
+
+@media (max-width: 768px) {
+  .menu {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    transform: translateX(100%);
+  }
+
+  .menu.show {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 769px) {
+  .menu {
+    width: 250px;
+    height: 100vh;
+    right: 0;
+    left: auto;
+    transform: translateX(100%) translateZ(0);
+  }
+
+  body.menu-opened .sticky-header {
+    margin-right: 250px;
+    width: calc(100% - 250px);
+  }
+
+  body.menu-opened .shift-on-menu {
+    margin-right: 250px;
+    transition: margin var(--transition-fast);
+  }
+
+  body.menu-opened .menu {
+    transform: translateX(0%) translateZ(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
