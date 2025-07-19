@@ -1,0 +1,33 @@
+/* ✅ card.css */
+
+.card {
+  width: 100%;
+  padding: 20px 12px 50px;
+  background: whitesmoke;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 20px;
+  transition: var(--transition-smooth);
+  opacity: 1;
+  transform: translateY(10px);
+  position: relative;
+}
+
+.fade-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 800px;
+    width: 95%;
+    padding: 30px 25px 60px;
+    box-shadow: var(--card-shadow);
+    transform: translateY(20px);
+  }
+}
+
+.highlight-card {
+  border: 3px solid var(--primary-color) !important;
+}
