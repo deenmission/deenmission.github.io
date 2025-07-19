@@ -67,7 +67,7 @@ main {
  
 .card {
   max-width: 800px;
-  width: 90%;
+  width: 98%;
   margin: 0 auto 30px;
   padding: 30px 25px 60px; /* নিচে বাড়ানো হয়েছে বাটনের জায়গার জন্য */
   background: whitesmoke;
