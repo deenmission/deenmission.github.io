@@ -1,23 +1,39 @@
-/* Reset */
+/* 🔹 Reset */
 
 { margin: 0; padding: 0; box-sizing: border-box; }
 
 
 body { font-family: Arial, sans-serif; background: whitesmoke; color: #333; }
 
-/* Header */ .sticky-header { position: fixed; top: 0; left: 0; right: 0; height: 3.125rem; background-color: #35a392; display: flex; align-items: center; justify-content: center; padding: 0 1.25rem; z-index: 1000; }
+/* 🔹 Layout */ .layout { display: flex; min-height: 100vh; }
+
+/* 🔹 Menu */ .menu { width: 300px; background-color: #fff; box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); padding-top: 3.5rem; z-index: 1000; }
+
+.menu .close-btn { display: none; /* ডেক্সটপে বন্ধ বোতাম লুকিয়ে রাখা হলো */ }
+
+.menu ul { list-style: none; padding: 0; margin: 0; }
+
+.menu ul li { padding: 12px 20px; border-bottom: 1px solid #eee; }
+
+.menu ul li a { text-decoration: none; color: #333; font-size: 1rem; display: block; transition: background 0.3s; }
+
+.menu ul li a:hover { background-color: #f0f0f0; }
+
+/* 🔹 Main */ main { flex: 1; padding: 6.25rem 1.25rem 2.5rem; }
+
+/* 🔹 Header */ .sticky-header { position: fixed; top: 0; left: 0; right: 0; height: 3.125rem; background-color: #35a392; display: flex; align-items: center; justify-content: center; padding: 0 1.25rem; z-index: 1001; }
 
 .logo { height: 3rem; position: absolute; left: 1.25rem; }
 
-.menu-icon { font-size: 1.75rem; color: #fff; cursor: pointer; position: absolute; right: 1.25rem; z-index: 1001; }
+.menu-icon { font-size: 1.75rem; color: #fff; cursor: pointer; position: absolute; right: 1.25rem; z-index: 1002; display: none; /* ডেক্সটপে মেনু আইকন দেখাবো না */ }
 
 .menu-icon:focus { outline: 2px solid #fff; outline-offset: 2px; }
 
-/* Main */ main { padding: 6.25rem 1.25rem 2.5rem; }
+/* 🔹 Card */ .card, .fade-card { max-width: 700px; margin: 0 auto 30px; padding: 30px 25px; background: whitesmoke; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 10px 50px rgba(53, 167, 156, 0.4); position: relative; opacity: 0; transform: translateY(20px); transition: all 0.6s ease-in-out; }
 
-/* Card */ .card { max-width: 700px; margin: 0 auto 30px; padding: 30px 20px; background: whitesmoke; border-radius: 12px; box-shadow: 0 10px 30px rgba(53, 167, 156, 0.4); overflow: hidden; position: relative; }
+.fade-card.visible { opacity: 1; transform: translateY(0); }
 
-.ayah-card { text-align: left; margin-top: 20px; position: relative; }
+.ayah-card { text-align: left; margin-top: 20px; }
 
 .ayah-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 8px; background-color: #35a392; border-top-right-radius: 6px; border-bottom-right-radius: 6px; }
 
@@ -27,33 +43,29 @@ body { font-family: Arial, sans-serif; background: whitesmoke; color: #333; }
 
 @keyframes ayahAnimate { to { opacity: 1; transform: translateY(0); } }
 
-/* Fade Card */ .fade-card { max-width: 700px; margin: 0 auto 30px; padding: 30px 25px; background: whitesmoke; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 10px 50px rgba(53, 167, 156, 0.4); opacity: 0; transform: translateY(20px); transition: all 0.6s ease-in-out; will-change: transform, opacity; }
+/* 🔹 Search */ .search-wrapper { display: flex; justify-content: center; align-items: center; margin-bottom: 20px; }
 
-.fade-card.visible { opacity: 1; transform: translateY(0); }
-
-/* Search */ .search-wrapper { display: flex; justify-content: center; align-items: center; margin-bottom: 20px; }
-
-.search-input { padding: 10px 16px; font-size: 1rem; border: 2px solid #8ed9cd; border-radius: 8px; outline: none; width: 90%; max-width: 500px; transition: border-color 0.3s ease; font-weight: bold; }
+.search-input { padding: 10px 16px; font-size: 1rem; border: 2px solid #8ed9cd; border-radius: 8px; outline: none; width: 90%; max-width: 500px; font-weight: bold; transition: border-color 0.3s ease; }
 
 .search-input:focus { border-color: #35a392; }
 
-/* No Result */ #noResultsCard { display: none; background-color: #fff5f5; border: 2px solid rgba(255, 0, 0, 0.3); border-radius: 12px; padding: 25px 20px; margin: 0 auto 30px; max-width: 700px; color: indianred; box-shadow: 0 0 15px rgba(255, 0, 0, 0.2); text-align: center; animation: fadeIn 0.8s ease-in-out; }
+/* 🔹 No Result */ #noResultsCard { display: none; background-color: #fff5f5; border: 2px solid rgba(255, 0, 0, 0.3); border-radius: 12px; padding: 25px 20px; margin: 0 auto 30px; max-width: 700px; color: indianred; text-align: center; animation: fadeIn 0.8s ease-in-out; box-shadow: 0 0 15px rgba(255, 0, 0, 0.2); }
 
 #noResultsCard .card-title { font-size: 1.4rem; font-weight: bold; margin-bottom: 10px; color: #b30000; }
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-/* Button */ .read-btn { margin-top: 15px; padding: 8px 16px; background-color: #35a392; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; float: right; }
+/* 🔹 Button */ .read-btn { margin-top: 15px; padding: 8px 16px; background-color: #35a392; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; float: right; }
 
 .read-btn:hover { background-color: #2a867a; }
 
 .read-btn:focus { outline: 2px solid #fff; outline-offset: 2px; }
 
-/* Highlight */ .highlight { background-color: #ffe564; padding: 2px 4px; border-radius: 4px; }
+/* 🔹 Highlight */ .highlight { background-color: #ffe564; padding: 2px 4px; border-radius: 4px; }
 
 .highlight-card { border: 3px solid #35a392 !important; }
 
-/* Link */ .link-box { display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; color: black; background-color: white; padding: 8px 12px; border-radius: 50px; font-size: 14px; transition: background-color 0.3s ease, transform 0.3s ease; min-width: 120px; height: 42px; }
+/* 🔹 Link */ .link-box { display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; color: black; background-color: white; padding: 8px 12px; border-radius: 50px; font-size: 14px; transition: background-color 0.3s ease, transform 0.3s ease; min-width: 120px; height: 42px; }
 
 .link-box img { width: 20px; height: 20px; border-radius: 50%; }
 
@@ -61,27 +73,15 @@ body { font-family: Arial, sans-serif; background: whitesmoke; color: #333; }
 
 .link-box:focus { outline: 2px solid #35a392; outline-offset: 2px; }
 
-/* Menu */ .menu { position: fixed; top: 0; right: 0; height: 100vh; background-color: #fff; box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2); z-index: 1000; padding-top: 3.5rem; opacity: 0; pointer-events: none; transform: translateX(100%) translateZ(0); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out; }
+/* 🔹 Responsive */ @media (max-width: 768px) { .layout { flex-direction: column; }
 
-.menu .close-btn { position: absolute; top: 19px; right: 15px; width: 20px; height: 20px; background-color: #f44336; color: white; font-size: 1.2rem; font-weight: bold; border: none; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background-color 0.3s ease, transform 0.2s ease; }
+.menu { width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; transform: translateX(100%); transition: transform 0.3s ease-in-out; }
+
+.menu.show { transform: translateX(0); }
+
+.menu .close-btn { display: flex; position: absolute; top: 19px; right: 15px; width: 20px; height: 20px; background-color: #f44336; color: white; font-size: 1.2rem; font-weight: bold; border: none; border-radius: 50%; cursor: pointer; align-items: center; justify-content: center; transition: background-color 0.3s ease, transform 0.2s ease; }
 
 .menu .close-btn:hover { background-color: #d32f2f; transform: rotate(90deg); }
 
-.menu .close-btn:focus { outline: 2px solid #35a392; outline-offset: 2px; }
-
-.menu.show { transform: translateX(0%) translateZ(0); opacity: 1; pointer-events: auto; }
-
-.menu ul { list-style: none; padding: 0; margin: 0; }
-
-.menu ul li { padding: 12px 20px; border-bottom: 1px solid #eee; }
-
-.menu ul li:last-child { border-bottom: none; }
-
-.menu ul li a { text-decoration: none; color: #333; display: block; font-size: 1rem; transition: background 0.3s; }
-
-.menu ul li a:hover { background-color: #f0f0f0; }
-
-/* Responsive */ @media (max-width: 768px) { .menu { width: 100vw; height: 100vh; } }
-
-@media (min-width: 769px) { .menu { width: 300px; height: 100%; } }
+.menu-icon { display: block; } }
 
